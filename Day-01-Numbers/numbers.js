@@ -31,3 +31,31 @@ function printEvenNum(num) {
 
 const num = 30
 // console.log(printEvenNum(num))
+
+// PROBLEM 4 SUM OF FIRST N NATURAL NUMBERS
+
+function sumOfNum(num) {
+    // BRUTE FORCE
+    // let sum = 0
+    // for (let index = 0; index <= num; index++) {
+    //     sum += index
+    // }
+    // return sum
+
+    // BETTER WAY THROUGH FORMULA
+    return num * (num + 1) / 2
+
+}
+
+// console.log(sumOfNum(1000000000000))
+
+
+// PROBLEM 5 PRODUCT (FACTORIAL) OF N
+let productFactorial = (num) => {
+    let prodFac = 1
+    for (let index = num; index >= 1; index--) {
+        prodFac *= index
+    }
+    return prodFac
+}
+// console.log(productFactorial(5))
