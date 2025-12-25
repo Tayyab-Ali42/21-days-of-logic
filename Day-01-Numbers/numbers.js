@@ -19,3 +19,15 @@ function printNumSecondVer() {
 // printNumSecondVer()
 
 
+// PROBLEM 3 PRINT ALL EVEN NUMBER FROM 1 TO N
+
+function printEvenNum(num) {
+    let result = []
+    for (let index = 1; index <= num; index++) {
+        index % 2 === 0 ? result.push(index) : ''
+    }
+    return result
+}
+
+const num = 30
+// console.log(printEvenNum(num))
