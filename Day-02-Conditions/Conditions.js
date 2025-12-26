@@ -22,3 +22,22 @@ let checkNum = (num = 0) => {
 console.log(checkNum(10))
 console.log(checkNum(-8))
 console.log(checkNum(0))
+
+// PROBLEM 3 CALCULATE ELECTERCITY BILL
+
+let calculateBill = (unit) => {
+    let totalBill
+    if (unit <= 100) {
+        totalBill = unit * 5
+    } else if (unit > 100 && unit <= 200) {
+        totalBill = unit * 7
+    } else if (unit > 200 && unit <= 300) {
+        totalBill = unit * 10
+    } else {
+        totalBill = unit * 12
+    }
+    return totalBill
+}
+
+console.log(calculateBill(500))
+
