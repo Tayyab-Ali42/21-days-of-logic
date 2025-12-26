@@ -52,3 +52,15 @@ let checkVowel = (char) => {
     }
 }
 console.log(checkVowel('b'))
+
+// PROBLEM 5 CHECK LEAP YEAR
+
+const checkLeapYear = (year) => {
+    return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+};
+
+console.log(
+    checkLeapYear(2004)
+        ? 'This year is a leap year'
+        : 'This year is not a leap year'
+);
