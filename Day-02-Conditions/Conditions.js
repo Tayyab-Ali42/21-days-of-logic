@@ -41,3 +41,14 @@ let calculateBill = (unit) => {
 
 console.log(calculateBill(500))
 
+// PROBLEM 4 CHECK IF A CHARACTER IS A VOWEL OR CONSTANT
+
+let checkVowel = (char) => {
+    char = char.toLowerCase()
+    if (char === 'e' || char === 'i' || char === 'o' || char === 'u' || char === 'a') {
+        return 'Char is a vowel'
+    } else {
+        return 'Char is not a vowel'
+    }
+}
+console.log(checkVowel('b'))
