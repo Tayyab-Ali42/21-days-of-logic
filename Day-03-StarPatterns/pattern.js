@@ -11,4 +11,22 @@ let rightAngled = (num) => {
     }
 }
 
-rightAngled(5);
+// rightAngled(5);
+
+
+// PROBLEM 2 PRINT INVERTED RIGHT-ANGLED TRIANGLE
+
+
+
+let invertedRightAngled = (num) => {
+    for (let i = 1; i <= num; i++) {
+        let stars = ''
+        for (let j = 1; j <= num - (i - 1); j++) {
+            stars += '*'
+        }
+        console.log(stars)
+    }
+}
+
+
+invertedRightAngled(5)
