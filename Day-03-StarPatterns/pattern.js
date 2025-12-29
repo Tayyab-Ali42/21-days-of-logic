@@ -29,4 +29,31 @@ let invertedRightAngled = (num) => {
 }
 
 
-invertedRightAngled(5)
+// invertedRightAngled(5)
+
+
+
+
+// PROBLEM 3 PRINT PYRAMID PATTERN
+
+let pyramidPattern = (rows) => {
+    for (let row = 1; row <= rows; row++) {
+        let line = ''
+
+        for (let spaces = 1; spaces <= rows - row; spaces++) {
+            line += ' '
+        }
+        for (let star = 1; star <= (2 * row - 1); star++) {
+            line += "*";
+        }
+
+        for (let space = 1; space <= rows - row; space++) {
+            line += ' ';
+        }
+        console.log(line)
+    }
+
+}
+
+pyramidPattern(5)
+
