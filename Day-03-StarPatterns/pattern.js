@@ -55,5 +55,26 @@ let pyramidPattern = (rows) => {
 
 }
 
-pyramidPattern(5)
+// pyramidPattern(5)
+
+
+// PROBLEM 4 PRINT INVERTED PYRAMID PATTERN
+
+let invertedPyramid = (rows) => {
+    for (let row = 1; row <= rows; row++) {
+        let line = ''
+
+        // spaces
+        for (let space = 1; space <= row; space++) {
+            line += ' '
+        }
+
+        // stars
+        for (let col = 1; col <= 2 * (rows - row) + 1; col++) {
+            line += '*'
+        }
+        console.log(line)
+    }
+}
+invertedPyramid(5)
 
